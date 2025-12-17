@@ -28,7 +28,7 @@ export const teamMembers = [
     github: "",
     linkedin: "https://www.linkedin.com/in/parvbajaj/",
     website: "https://r00tp4rv.github.io",
-    image: "/images/team/parv.jpg"
+    image: "/images/team/parv.JPG"
   },
   {
     name: "Gurpreet Singh",
