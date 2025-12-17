@@ -48,7 +48,7 @@ export const teamMembers = [
   },
   {
     name: "Abihimanyu V",
-    role: "Lead",
+    role: "Team Lead",
     specialty: "Web Exploitation",
     nickname: "bobby_smiles",
     github: "https://github.com/emmawilson",
