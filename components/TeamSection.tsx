@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Github, Linkedin } from "lucide-react";
+import { Users, Github, Linkedin, GlobeIcon } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -17,6 +17,7 @@ export const teamMembers = [
     nickname: "dugs",
     github: "https://github.com/ddugs",
     linkedin: "https://linkedin.com/in/ddugs",
+    website: "https://www.ddugs.xyz",
     image: "/images/team/dhruv.jpg"
   },
   {
@@ -24,9 +25,10 @@ export const teamMembers = [
     role: "Lead",
     specialty: "Web Exploitation",
     nickname: "r00tp4rv",
-    github: "https://github.com/parvbajaj",
+    github: "",
     linkedin: "https://www.linkedin.com/in/parvbajaj/",
-    image: "/images/team/parv.JPG"
+    website: "https://r00tp4rv.github.io",
+    image: "/images/team/parv.jpg"
   },
   {
     name: "Gurpreet Singh",
@@ -35,6 +37,7 @@ export const teamMembers = [
     nickname: "3v1l@D3v1l",
     github: "https://github.com/gurpreet",
     linkedin: "https://www.linkedin.com/in/gurupreet-singh-342978266/",
+    website: "",
     image: ""
   },
   {
@@ -42,17 +45,19 @@ export const teamMembers = [
     role: "Team Lead",
     specialty: "Web Exploitation",
     nickname: "perman",
-    github: "https://github.com/emmawi",
+    github: "",
     linkedin: "https://www.linkedin.com/in/arjunkumar7/",
+    website: "",
     image: "/images/team/arjun.jpg"
   },
   {
     name: "Abihimanyu V",
-    role: "Team Lead",
+    role: "Lead",
     specialty: "Web Exploitation",
     nickname: "bobby_smiles",
     github: "https://github.com/emmawilson",
     linkedin: "https://www.linkedin.com/in/abihimanyu-v-344b4b34a/",
+    website: "",
     image: ""
   },
   {
@@ -62,6 +67,7 @@ export const teamMembers = [
     nickname: "terminalord",
     github: "https://github.com/emmawilson",
     linkedin: "https://www.linkedin.com/in/ayushhande/",
+    website: "",
     image: ""
   },
   {
@@ -71,6 +77,7 @@ export const teamMembers = [
     nickname: "pr0nt0",
     github: "https://github.com/emmawilson",
     linkedin: "https://linkedin.com/in/emmawilson",
+    website: "",
     image: ""
   },
 ];
@@ -89,7 +96,7 @@ export default function TeamSection() {
             Our Team
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Meet the brilliant minds behind our success.
+            Meet the brilliant minds behind Cryptonite&apos;s success.
           </p>
         </motion.div>
 
@@ -132,20 +139,33 @@ export default function TeamSection() {
                   </p>
                   {/* Social Links */}
                   <div className="flex justify-center gap-4 pt-2 border-t border-border/50">
-                    <Link
-                      href={member.linkedin}
-                      target="_blank"
-                      className="text-muted-foreground hover:text-neon-orange transition-colors"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </Link>
-                    <Link
-                      href={member.github}
-                      target="_blank"
-                      className="text-muted-foreground hover:text-neon-orange transition-colors"
-                    >
-                      <Github className="w-5 h-5" />
-                    </Link>
+                    {member.linkedin && (
+                      <Link
+                        href={member.linkedin}
+                        target="_blank"
+                        className="text-muted-foreground hover:text-neon-orange transition-colors"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                      </Link>
+                    )}
+                    {member.website && (
+                      <Link
+                        href={member.website}
+                        target="_blank"
+                        className="text-muted-foreground hover:text-neon-orange transition-colors"
+                      >
+                        <GlobeIcon className="w-5 h-5" />
+                      </Link>
+                    )}
+                    {member.github && (
+                      <Link
+                        href={member.github}
+                        target="_blank"
+                        className="text-muted-foreground hover:text-neon-orange transition-colors"
+                      >
+                        <Github className="w-5 h-5" />
+                      </Link>
+                    )}
                   </div>
                 </CardContent>
               </Card>
