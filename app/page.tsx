@@ -122,7 +122,7 @@ export default function Home() {
                 About Us
               </motion.h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                It all ignited in June 2025—pure self-motivation, no shortcuts. In just months, FLAGZ0NFIRE has stormed into the Top 20 teams in India, burning through 50+ CTFs and counting. Our mission is clear: represent India on the global cybersecurity charts, dominate the battlefield, and leave no footprints behind.
+                It all ignited in June 2025—pure self-motivation, no shortcuts. In just months, FLAGZ 0N FIR3 has stormed into the Top 20 teams in India, burning through 50+ CTFs and counting. Our mission is clear: represent India on the global cybersecurity charts, dominate the battlefield, and leave no footprints behind.
                 <br />
                 <br />
                 We’re here to find skilled minds, learn relentlessly, and outplay the best—together. If you thrive under pressure, love breaking limits, and want to set the scoreboard ablaze…
@@ -273,7 +273,7 @@ export default function Home() {
 
           </div>
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Flagz0nFire. All rights reserved.
+            © {new Date().getFullYear()} Flagz 0n Fir3. All rights reserved.
           </p>
           <div className="flex flex-col items-center gap-3 mt-4">
             <Link

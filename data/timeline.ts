@@ -15,7 +15,7 @@ export const timelineData: TimelineMilestone[] = [
   {
     year: "2025",
     title: "Founded",
-    description: "FLAGZ0NFIRE is a self-motivated community focused on finding skilled minds, learning relentlessly, and outplaying the best-together.",
+    description: "FLAGZ 0N FIR3 is a self-motivated community focused on finding skilled minds, learning relentlessly, and outplaying the best-together.",
     details: [
       { text: "Started with a core team of 3 passionate hackers from same college" },
       { text: "Established training programs for beginners" },

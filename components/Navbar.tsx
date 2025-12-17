@@ -114,7 +114,9 @@ export default function Navbar() {
                 </Link>
               ))}
               <Button variant="neon" className="w-full">
-                Join Us
+                <Link href="https://ctftime.org/team/392211" target="_blank">
+                CTFtime
+                </Link>
               </Button>
             </div>
           </motion.div>

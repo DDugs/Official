@@ -21,16 +21,16 @@ export const teamMembers = [
   },
   {
     name: "Parv Bajaj",
-    role: "Vice Lead",
+    role: "Lead",
     specialty: "Web Exploitation",
     nickname: "r00tp4rv",
     github: "https://github.com/parvbajaj",
     linkedin: "https://www.linkedin.com/in/parvbajaj/",
-    image: ""
+    image: "/images/team/parv.jpg"
   },
   {
     name: "Gurpreet Singh",
-    role: "Lead",
+    role: "Team Lead",
     specialty: "Forensics",
     nickname: "3v1l@D3v1l",
     github: "https://github.com/gurpreet",
@@ -39,7 +39,7 @@ export const teamMembers = [
   },
   {
     name: "Arjun Kumar",
-    role: "Lead",
+    role: "Team Lead",
     specialty: "Web Exploitation",
     nickname: "perman",
     github: "https://github.com/emmawi",
