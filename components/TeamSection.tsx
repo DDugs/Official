@@ -52,13 +52,13 @@ export const teamMembers = [
   },
   {
     name: "Abihimanyu V",
-    role: "Lead",
+    role: "Team Lead",
     specialty: "Web Exploitation",
     nickname: "bobby_smiles",
-    github: "https://github.com/emmawilson",
+    github: "https://github.com/LordA2117",
     linkedin: "https://www.linkedin.com/in/abihimanyu-v-344b4b34a/",
-    website: "",
-    image: ""
+    website: "https://github.com/LordA2117/vulnerable-machines-writeups/",
+    image: "/images/team/abihimanyu.jpg"
   },
   {
     name: "Ayush Hande",

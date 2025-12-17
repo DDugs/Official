@@ -47,7 +47,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               <Image
-                src="/logo.jpg"
+                src="/foflogo.png"
                 alt="FLAGZONFIR3 Logo"
                 width={40}
                 height={40}

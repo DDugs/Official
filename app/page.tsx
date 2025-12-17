@@ -233,7 +233,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Image
-              src="/logo.jpg"
+              src="/foflogo.png"
               alt="FLAGZONFIR3 Logo"
               width={40}
               height={40}
