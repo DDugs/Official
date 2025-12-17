@@ -44,7 +44,7 @@ export const teamMembers = [
     nickname: "perman",
     github: "https://github.com/emmawi",
     linkedin: "https://www.linkedin.com/in/arjunkumar7/",
-    image: ""
+    image: "/images/team/arjun.jpg"
   },
   {
     name: "Abihimanyu V",
@@ -89,7 +89,7 @@ export default function TeamSection() {
             Our Team
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Meet the brilliant minds behind Cryptonite&apos;s success.
+            Meet the brilliant minds behind our success.
           </p>
         </motion.div>
 
