@@ -13,7 +13,7 @@ const icons: Record<string, React.ReactNode> = {
   "July": <Flag className="w-5 h-5" />,
   "September": <Trophy className="w-5 h-5" />,
   "December": <Star className="w-5 h-5" />,
-  "January": <Calendar className="w-5 h-5" />,
+  "2026": <Calendar className="w-5 h-5" />,
 };
 
 interface TimelineCardProps {
@@ -86,7 +86,7 @@ function TimelineCard({ item, index, isLeft, isExpanded, onToggle }: TimelineCar
               {/* Mobile date badge */}
               <Badge
                 variant="outline"
-                className="md:hidden mb-4 text-sm py-1 px-3 bg-background border-primary/50 text-primary font-mono"
+                className="md:hidden mb-4 text-sm py-1 px-3 bg-background border-text-muted-foreground/50 text-text-muted-foreground font-mono"
               >
                 {item.year}
               </Badge>

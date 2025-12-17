@@ -52,7 +52,7 @@ export const timelineData: TimelineMilestone[] = [
     ],
   },
   {
-    year: "January",
+    year: "2026",
     title: "India's Top 20",
     description: "Achieved top 20 ranking in national cybersecurity competitions, in just few months of existence.",
     details: [

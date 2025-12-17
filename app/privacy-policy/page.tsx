@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
 
           <div className="border-t border-border pt-8 mt-8">
             <p className="text-xs text-center">
-              © {new Date().getFullYear()} Fl4gz0nF1r3. All rights reserved.
+              © {new Date().getFullYear()} Flagz0nFire. All rights reserved.
             </p>
           </div>
         </div>
