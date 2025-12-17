@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #000000;
+  --color-foreground: #e0e0e0;
+  --color-card: #0a0a0a;
+  --color-card-foreground: #e0e0e0;
+  --color-popover: #0a0a0a;
+  --color-popover-foreground: #e0e0e0;
+  --color-primary: #00ffff;
+  --color-primary-foreground: #000000;
+  --color-secondary: #1a1a2e;
+  --color-secondary-foreground: #e0e0e0;
+  --color-muted: #1a1a2e;
+  --color-muted-foreground: #888888;
+  --color-accent: #ff4500ff;
+  --color-accent-foreground: #000000;
+  --color-destructive: #ff3366;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #2a2a4a;
+  --color-input: #1a1a2e;
+  --color-ring: #00ffff;
+  --color-neon-cyan: #00ffff;
+  --color-neon-orange: #ff4500ff;
+  --color-white: #ffffff;
+  --color-dark-bg: #050510;
+
+  --radius-lg: 0.75rem;
+  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem;
+
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+  --font-cyber: "Cyberbang", sans-serif;
+}
+
+@font-face {
+  font-family: "Cyberbang";
+  src: url("./fonts/Cyberbang.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-mono);
+}
+
+/* Neon glow effects */
+.neon-text {
+  text-shadow:
+    0 0 5px var(--color-neon-cyan),
+    0 0 10px var(--color-neon-cyan),
+    0 0 20px var(--color-neon-cyan),
+    0 0 40px var(--color-neon-cyan);
+}
+
+.neon-border {
+  box-shadow:
+    0 0 5px var(--color-neon-cyan),
+    0 0 10px var(--color-neon-cyan),
+    inset 0 0 5px rgba(0, 255, 255, 0.1);
+}
+
+.neon-cyan-text {
+  text-shadow:
+    0 0 5px var(--color-neon-cyan),
+    0 0 10px var(--color-neon-cyan),
+    0 0 20px var(--color-neon-cyan);
+}
+
+/* Gradient backgrounds */
+.cyber-gradient {
+  background: linear-gradient(135deg, #050510 0%, #0a0a20 50%, #050510 100%);
+}
+
+/* Scanline effect */
+.scanlines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.1) 2px,
+      rgba(0, 0, 0, 0.1) 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neon-orange);
+  border-radius: 4px;
+}
+
+/* Timeline specific styles */
+.timeline-line-gradient {
+  background: linear-gradient(to bottom,
+      transparent,
+      var(--color-neon-orange) 10%,
+      #ffaa00 50%,
+      var(--color-neon-orange) 90%,
+      transparent);
+}
+
+.timeline-dot {
+  box-shadow:
+    0 0 10px var(--color-muted-foreground),
+    0 0 20px var(--color-muted-foreground),
+    0 0 30px var(--color-muted-foreground);
+}
+
+/* Custom matchstick cursor */
+.fire-cursor,
+.fire-cursor * {
+  cursor: url('/matchstick-cursor.svg') 20 36, auto;
+}
+
+.fire-cursor a,
+.fire-cursor button,
+.fire-cursor [role="button"],
+.fire-cursor input,
+.fire-cursor textarea,
+.fire-cursor select {
+  cursor: url('/matchstick-cursor.svg') 16 32, pointer;
+}
+
+/* Fire theme accent colors */
+.fire-glow {
+  box-shadow:
+    0 0 10px #ff4500,
+    0 0 20px #ff6b35,
+    0 0 30px #ffaa00;
+}
+
+.fire-text {
+  text-shadow:
+    0 0 5px #ff4500,
+    0 0 10px #ff6b35,
+    0 0 20px #ffaa00,
+    0 0 40px #ff4500;
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Matchstick body -->
+  <rect x="14" y="16" width="4" height="16" rx="1" fill="#8B4513"/>
+  
+  <!-- Match head -->
+  <ellipse cx="16" cy="14" rx="4" ry="5" fill="#ff4500"/>
+  
+  <!-- Flame -->
+  <path d="M16 2 Q12 8 14 12 Q16 10 16 12 Q16 10 18 12 Q20 8 16 2" fill="#ffd700">
+    <animate attributeName="d" 
+      values="M16 2 Q12 8 14 12 Q16 10 16 12 Q16 10 18 12 Q20 8 16 2;
+              M16 1 Q11 7 14 12 Q16 9 16 12 Q16 9 18 12 Q21 7 16 1;
+              M16 2 Q12 8 14 12 Q16 10 16 12 Q16 10 18 12 Q20 8 16 2"
+      dur="0.3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Inner flame -->
+  <path d="M16 5 Q14 9 15 11 Q16 10 17 11 Q18 9 16 5" fill="#ff6b35">
+    <animate attributeName="d" 
+      values="M16 5 Q14 9 15 11 Q16 10 17 11 Q18 9 16 5;
+              M16 4 Q13 8 15 11 Q16 9 17 11 Q19 8 16 4;
+              M16 5 Q14 9 15 11 Q16 10 17 11 Q18 9 16 5"
+      dur="0.25s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Flame core -->
+  <ellipse cx="16" cy="9" rx="2" ry="3" fill="#fff5e0">
+    <animate attributeName="ry" values="3;2.5;3" dur="0.2s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>
