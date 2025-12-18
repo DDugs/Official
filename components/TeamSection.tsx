@@ -68,7 +68,7 @@ export const teamMembers = [
     github: "https://github.com/emmawilson",
     linkedin: "https://www.linkedin.com/in/ayushhande/",
     website: "",
-    image: ""
+    image: "/images/team/ayush.jpg"
   },
   {
     name: "Anonymous",
