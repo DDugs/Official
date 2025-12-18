@@ -30,26 +30,26 @@ const achievements = [
   {
     icon: <Trophy className="w-8 h-8" />,
     title: "CTF Victories",
-    value: "50+",
+    value: "5+",
     description: "Captured flags worldwide",
   },
   {
     icon: <Globe className="w-8 h-8" />,
-    title: "Global Rank",
-    value: "Top 5",
+    title: "Country Rank",
+    value: "Top 20",
     description: "International competitions",
   },
   {
     icon: <Users className="w-8 h-8" />,
     title: "Team Members",
-    value: "100+",
+    value: "10+",
     description: "Active hackers",
   },
   {
     icon: <Star className="w-8 h-8" />,
-    title: "Events Hosted",
-    value: "20+",
-    description: "Workshops & CTFs",
+    title: "CTFs Hosted",
+    value: "NULL",
+    description: "Coming soon",
   },
 ];
 

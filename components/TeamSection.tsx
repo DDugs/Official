@@ -96,7 +96,7 @@ export default function TeamSection() {
             Our Team
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Meet the brilliant minds behind Cryptonite&apos;s success.
+            Meet the brilliant minds behind our success.
           </p>
         </motion.div>
 
