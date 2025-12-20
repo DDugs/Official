@@ -78,9 +78,13 @@ export default function Home() {
             >
             </motion.div>
 
+            {/*<h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-wider font-[family-name:var(--font-cyber)]">
+              FLAGZ{" "}
+              <span className="text-neon-orange">ON</span>{" "}
+              FIR3
+            </h1>*/}
             <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-wider font-[family-name:var(--font-cyber)]">
-              FLAGZ ON FIR3
-            </h1>
+              FLAGZ 0N FIR3 </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto font-mono">
               0wned. Exploited. Deleted.
@@ -122,13 +126,13 @@ export default function Home() {
                 About Us
               </motion.h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                It all ignited in June 2025—pure self-motivation, no shortcuts. In just months, FLAGZ 0N FIR3 has stormed into the Top 20 teams in India, burning through 50+ CTFs and counting. Our mission is clear: represent India on the global cybersecurity charts, dominate the battlefield, and leave no footprints behind.
+                It all ignited in June 2025—pure self-motivation, no shortcuts. In just months, <span className="text-white">FLAGZ 0N FIR3</span> has stormed into the Top 20 teams in India, burning through 50+ CTFs and counting. Our mission is clear: represent India on the global cybersecurity charts, dominate the battlefield, and leave no footprints behind.
                 <br />
                 <br />
                 We’re here to find skilled minds, learn relentlessly, and outplay the best—together. If you thrive under pressure, love breaking limits, and want to set the scoreboard ablaze…
                 <br />
                 <br />
-                Join us. Burn the flag. Leave only fire.🔥
+                <span className="text-white">Join us. Burn the flag. Leave only fire.🔥</span>
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -273,7 +277,7 @@ export default function Home() {
 
           </div>
           <p className="text-muted-foreground text-xs">
-            © {new Date().getFullYear()} Flagz 0n Fir3. All rights reserved.
+            © {new Date().getFullYear()} Flagz0nFire. All rights reserved.
           </p>
           <div className="flex flex-col items-center gap-3 mt-4">
             <Link

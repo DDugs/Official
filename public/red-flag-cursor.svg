@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="44" viewBox="0 0 40 44">
+  <defs>
+    <!-- Gradient for realistic flag fabric -->
+    <linearGradient id="flagGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#cc0000"/>
+      <stop offset="30%" style="stop-color:#ff1a1a"/>
+      <stop offset="60%" style="stop-color:#cc0000"/>
+      <stop offset="100%" style="stop-color:#990000"/>
+    </linearGradient>
+    
+    <!-- Shadow gradient for depth -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#990000"/>
+      <stop offset="100%" style="stop-color:#660000"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Everything shifted right and down to accommodate tilt -->
+  <g transform="translate(6, 2) rotate(-15, 6, 36)">
+    <!-- Flag pole -->
+    <rect x="4" y="6" width="3" height="34" rx="1.5" fill="#8B4513"/>
+    <rect x="4.5" y="6" width="1" height="34" fill="#a0522d"/>
+    <!-- Pole top ornament -->
+    <circle cx="5.5" cy="6" r="2.5" fill="#d4af37"/>
+    <circle cx="5.5" cy="6" r="1.5" fill="#ffd700"/>
+    
+    <!-- Animated waving flag -->
+    <!-- Flag fabric with wave animation -->
+    <path fill="url(#flagGradient)" stroke="#800000" stroke-width="0.5">
+      <animate 
+        attributeName="d"
+        values="M7 6 Q14 5 20 7 Q26 9 30 6 L30 20 Q24 23 18 20 Q12 17 7 20 Z;
+                M7 6 Q16 4 22 8 Q28 11 30 7 L30 21 Q26 24 20 19 Q13 15 7 20 Z;
+                M7 6 Q13 7 19 5 Q25 7 30 6 L30 19 Q23 22 17 21 Q11 19 7 20 Z;
+                M7 6 Q14 5 20 7 Q26 9 30 6 L30 20 Q24 23 18 20 Q12 17 7 20 Z"
+        dur="0.8s"
+        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Flag shadow/fold detail -->
+    <path fill="url(#shadowGradient)" opacity="0.4">
+      <animate 
+        attributeName="d"
+        values="M12 8 Q16 10 20 9 Q24 11 28 8 L28 18 Q22 20 16 18 Q12 15 12 16 Z;
+                M13 7 Q18 9 22 10 Q26 12 28 9 L28 19 Q24 21 18 17 Q14 14 13 16 Z;
+                M11 9 Q15 8 19 7 Q23 9 28 8 L28 17 Q21 19 15 19 Q12 17 11 16 Z;
+                M12 8 Q16 10 20 9 Q24 11 28 8 L28 18 Q22 20 16 18 Q12 15 12 16 Z"
+        dur="0.8s"
+        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Highlight for fabric sheen -->
+    <path fill="#ff6666" opacity="0.3">
+      <animate 
+        attributeName="d"
+        values="M8 7 Q12 6 16 7 Q20 8 24 7 L23 12 Q18 13 13 12 Q10 10 8 11 Z;
+                M8 7 Q14 5 18 8 Q22 10 24 7 L23 13 Q20 14 15 11 Q11 9 8 11 Z;
+                M8 8 Q11 7 15 6 Q19 7 24 7 L23 11 Q17 13 12 12 Q9 11 8 11 Z;
+                M8 7 Q12 6 16 7 Q20 8 24 7 L23 12 Q18 13 13 12 Q10 10 8 11 Z"
+        dur="0.8s"
+        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Fabric texture lines -->
+    <path stroke="#800000" stroke-width="0.3" fill="none" opacity="0.5">
+      <animate 
+        attributeName="d"
+        values="M9 10 Q14 9 19 11 Q24 12 28 10; M10 14 Q15 13 20 15 Q25 16 28 14;
+                M9 9 Q15 8 20 11 Q25 13 28 10; M10 13 Q16 12 21 15 Q26 17 28 14;
+                M9 11 Q13 10 18 10 Q23 11 28 10; M10 15 Q14 14 19 14 Q24 15 28 14;
+                M9 10 Q14 9 19 11 Q24 12 28 10; M10 14 Q15 13 20 15 Q25 16 28 14"
+        dur="0.8s"
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
