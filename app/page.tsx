@@ -37,7 +37,7 @@ const achievements = [
     icon: <Globe className="w-8 h-8" />,
     title: "Country Rank",
     value: "Top 20",
-    description: "International competitions",
+    description: "International Competitions",
   },
   {
     icon: <Users className="w-8 h-8" />,
@@ -47,9 +47,9 @@ const achievements = [
   },
   {
     icon: <Star className="w-8 h-8" />,
-    title: "CTFs Hosted",
-    value: "NULL",
-    description: "Coming soon",
+    title: "CTFs Hosted/Authored",
+    value: "1",
+    description: "Authored Challenges for Breach Point CTF and ended with a great success. Link to the website - https://www.breachpoint.live/",
   },
 ];
 
