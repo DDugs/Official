@@ -80,6 +80,16 @@ export const teamMembers = [
     website: "",
     image: ""
   },
+    {
+    name: "Prajwal Chawda",
+    role: "Core Member",
+    specialty: "Reverse Engineering",
+    nickname: "iruka_proton",
+    github: "https://github.com/brandy-build",
+    linkedin: "https://www.linkedin.com/in/prajwal-l-chawda-9b4685254/",
+    website: "https://brandy-build.github.io/Lip-Portfolio/",
+    image: "/images/team/prajwal.png"
+  },
 ];
 
 export default function TeamSection() {
